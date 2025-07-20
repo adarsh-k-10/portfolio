@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="content">
+        <header class="card" id="head">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="card" id="home">
+            <div class="name">
+                <h1>NAME</h1>
+                <ul>
+                    <li><a href="https://github.com/your-username" target="_blank" aria-label="GitHub"><i
+                                class="bx bxl-github"></i></a></li>
+                    <li><a href="https://linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn"><i
+                                class="bx bxl-linkedin"></i></a></li>
+                    <li><a href="mailto:your.email@example.com" aria-label="Email"><i class="bx bxl-gmail"></i></a></li>
+                </ul>
+            </div>
+            <div class="image"><img src="" alt="" /></div>
+        </main>
+        <section class="card" id="about">
+            <h1>ABOUT ME</h1>
+            <p>
+                Hi! I’m a B.Tech undergraduate in Computer Science Engineering with a
+                passion for solving real-world problems through technology. I have
+                hands-on experience with Python, C, and intermediate knowledge of
+                HTML, CSS, and JavaScript. I’m deeply curious and always eager to
+                innovate, create, and explore new fields within tech. Whether it’s
+                building something useful or learning something new, I’m driven by a
+                desire to grow and make a meaningful impact through my work
+            </p>
+        </section>
+        <section class="card" id="skills">
+            <div class="card innercard">
+                <h3>TECH SKILLS</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>HTML CSS JS</li>
+                </ul>
+            </div>
+            <div class="card innercard">
+                <h3>SOFT SKILLS</h3>
+                <ul>
+                    <li>Time Management</li>
+                    <li>Problem Solving</li>
+                    <li>Creative Thinking</li>
+                </ul>
+            </div>
+            <div class="card innercard">
+                <h3>PROJECTS</h3>
+                <ul>
+                    <li>Todo</li>
+                    <li>Portfolio</li>
+                </ul>
+            </div>
+        </section>
+        <section class="card" id="contact">
+            <h1>CONTACT</h1>
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="user-name" placeholder="Name" required />
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="user-mail" placeholder="Email" required />
+                <label for="tel">Phone No.</label>
+                <input type="number" id="number" name="user-phone" placeholder="Phone No." required />
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Write the message..." required></textarea>
+                <button class="btn" type="submit">Send</button>
+            </form>
+        </section>
+        <footer class="foot">&copy; All Rights Reserved</footer>
+    </div>
+</body>
+
+</html>

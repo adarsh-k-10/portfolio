@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background: #000;
+    display: block;
+    justify-content: center;
+    background: linear-gradient(135deg, #0a0a0f, #39195b, #1f0533);
+
+
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: transparent;
+    background-attachment: fixed;
+    position: relative;
+    color: lightgray;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+
+}
+
+.nav a:hover {
+    color: #ffb86c;
+}
+
+#home {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.name ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+
+
+}
+
+.head h1 {
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.name i {
+    color: lightgray;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.name a:hover i {
+    color: #ffb86c;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+
+}
+
+#head {
+    width: 98%;
+}
+
+.card {
+    width: 80%;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin: 1rem auto;
+    text-align: center;
+
+
+}
+
+.card p {
+    line-height: 1.3;
+    margin-top: 1rem;
+
+}
+
+.innercard {
+    width: 70%;
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.05);
+    margin: 1rem auto;
+
+
+}
+
+
+.innercard:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: scale(1.05);
+    transition: 0.3s ease;
+
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+
+
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin: 2px;
+    font-size: medium;
+    color: black;
+    border-radius: 6px;
+    border: none;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+#message {
+    height: 150px;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: .8rem;
+    background-color: #ffb86c;
+    color: #0a0a0f;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffa94d;
+}
+
+.foot {
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .content {
+        max-width: none;
+        font-size: 1.1rem;
+
+    }
+
+    .innercard {
+        width: 40%;
+    }
+}
+
+@media (min-width:1024px) {
+    .content {
+        max-width: none;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .innercard {
+        width: 30%;
+    }
+
+    .innercard:hover {
+        transform: scale(1.2);
+        transition: 0.3s ease;
+    }
+}
