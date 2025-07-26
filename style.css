@@ -15,7 +15,7 @@ body {
     background: #000;
     display: block;
     justify-content: center;
-    background: linear-gradient(135deg, #0a0a0f, #39195b, #1f0533);
+    background: linear-gradient(135deg, #0a0a0f , #39195b, #1f0533 );
 
 
 }
@@ -58,6 +58,8 @@ ul {
     display: flex;
     justify-content: space-evenly;
 
+
+
 }
 
 .name ul {
@@ -87,10 +89,16 @@ h1 {
 }
 
 img {
-    width: 150px;
-    height: 150px;
+    width: 230px;
+    height: 230px;
     object-fit: cover;
+    border-radius: 50%;
 
+}
+
+img:hover{
+    transform: scale(1.03);
+    transition: 0.3s ease;
 }
 
 #head {
@@ -123,14 +131,15 @@ img {
     backdrop-filter: blur(6px);
     background: rgba(255, 255, 255, 0.05);
     margin: 1rem auto;
-
+    border: 1px solid #ee82ee;
+    
 
 }
 
 
 .innercard:hover {
     background: rgba(255, 255, 255, 0.08);
-    transform: scale(1.05);
+    transform: scale(1.03);
     transition: 0.3s ease;
 
 }
